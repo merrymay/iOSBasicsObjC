@@ -7,6 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "AFNetworking.h"
+ 
+ 
 
 @interface iOSBasicsObjCTests : XCTestCase
 
@@ -25,6 +28,19 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+}
+
+- (void)testMySample {
+//    MyNetworkManager *mgr = [[MyNetworkManager alloc] init];
+//    [mgr sendSimpleHttpRequestUsingAlmofireWithSuccess:^(SampleJson * data) {
+//
+//        NSLog(@">>> Success Block = %@", data.companies[0]);
+//
+//        XCTAssertEqual(data.companies[0], "Apple", "*** Fail ***")
+//
+//    } failure:^(NSError * error) {
+//        NSLog(@">>> Fail Block = %@", error);
+//    }];
 }
 
 - (void)testPerformanceExample {
