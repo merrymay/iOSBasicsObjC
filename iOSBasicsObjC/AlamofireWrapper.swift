@@ -17,6 +17,11 @@ public enum Result<T> {
     case error
 }
 
+public enum APIError : Error {
+    case noData
+    case unknown
+}
+
 public protocol NetworkRequest {
     func request(
         _ url: URL,
@@ -29,17 +34,34 @@ public protocol NetworkRequest {
 public class RealNetworkRequest: NetworkRequest {
     
     public func request(_ url: URL, method: HTTPMethod, parameters: [String : Any]?, headers: [String : String]?, completion: @escaping (Result<Data>) -> Void) {
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            guard error == nil else {
+                DDLogError("returned error")
+                completion(.error)
+                return
+            }
+            
+            guard let content = data else {
+                DDLogWarn("No data")
+                // TODO completion(.noData)
+                return
+            }
+            
+            completion(.success(content))
+        }
+        task.resume()
         
-        Alamofire.request(url,
-                          method: method,
-                          parameters: parameters,
-                          encoding: URLEncoding.default,
-                          headers: headers).responseJSON(completionHandler: { (response) in
-                            if let data = response.data {
-                                completion(.success(data))
-                            } else {
-                                completion(.error)
-                            }
-                          })
+//        Alamofire.request(url,
+//                          method: method,
+//                          parameters: parameters,
+//                          encoding: URLEncoding.default,
+//                          headers: headers).responseJSON(completionHandler: { (response) in
+//                            if let data = response.data {
+//                                completion(.success(data))
+//                            } else {
+//                                completion(.error)
+//                            }
+//                          })
     }
 }
