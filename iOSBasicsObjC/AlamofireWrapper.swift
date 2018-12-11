@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-
+import CocoaLumberjack
 
 // https://medium.com/cocoaacademymag/unit-testing-network-request-3a75061fcf4c
 

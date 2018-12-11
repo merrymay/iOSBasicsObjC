@@ -5,6 +5,8 @@ use_frameworks!
 def shared_pods
     pod 'AFNetworking', '~> 3.0'
     pod 'Alamofire', '~> 4.7'
+    pod 'CocoaLumberjack/Swift'
+    pod 'Masonry'
 end
 
 target 'iOSBasicsObjC' do

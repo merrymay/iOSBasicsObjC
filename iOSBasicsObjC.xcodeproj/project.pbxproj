@@ -57,6 +57,7 @@
 		CB11C8BB21B9069F00477792 /* RestApiUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiUnitTest.swift; sourceTree = "<group>"; };
 		CB69BA5021B7502500C595E5 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		CB69BA5221B75B9F00C595E5 /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		CB6D99E121BF391E007EABDD /* EnableSwiftForObjCProject.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = EnableSwiftForObjCProject.md; sourceTree = "<group>"; };
 		CBA8452C21B6421300723A2E /* iOSBasicsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBasicsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA8452F21B6421300723A2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBA8453021B6421300723A2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 		CBA8452321B6421300723A2E = {
 			isa = PBXGroup;
 			children = (
+				CB6D99E121BF391E007EABDD /* EnableSwiftForObjCProject.md */,
 				CBA8452E21B6421300723A2E /* iOSBasicsObjC */,
 				CBA8454721B6421500723A2E /* iOSBasicsObjCTests */,
 				CBA8455221B6421500723A2E /* iOSBasicsObjCUITests */,
@@ -358,6 +360,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSBasicsObjC/Pods-iOSBasicsObjC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -365,6 +369,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

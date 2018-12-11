@@ -9,9 +9,11 @@
 #import "ViewController.h"
 #import "AFNetworking.h"
 #import "iOSBasicsObjC-Swift.h"
+#import "CocoaLumberjack.h"
+#import "Masonry.h"
 
 
-
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
@@ -41,6 +43,8 @@
 
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -58,7 +62,8 @@
  
     [mgr testNetworkWrapper];
     
- 
+    
+    
      // AFNetwork
 //    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
 //    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
@@ -75,8 +80,40 @@
 //    }];
 //    [dataTask resume];
     
+    [self testSnapKit];
+    
+    // Test Lumberjack logger
+    [self testLumberjackLogger];
+    
     
 }
 
+- (void)testSnapKit {
+    UIView *sampleView = [[UIView alloc]init];
+    sampleView.backgroundColor = UIColor.blueColor;
+    [self.view addSubview:sampleView];
+    
+    [sampleView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(10, 10, 10, 10));
+    }];
+    
+}
 
+- (void)testLumberjackLogger {
+    [DDLog addLogger:[DDOSLogger sharedInstance]]; // Uses os_log
+    
+    // File logger : device app container 의 cache folder 에 저장됨
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
+    fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    [DDLog addLogger:fileLogger];
+    
+    DDLogVerbose(@"Meet George Jetson");
+    
+    DDLogVerbose(@"Verbose");
+    DDLogDebug(@"Debug");
+    DDLogInfo(@"Info");
+    DDLogWarn(@"Warn");
+    DDLogError(@"Error");
+}
 @end
