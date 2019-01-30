@@ -16,6 +16,10 @@
 		CB11C8C021B9457E00477792 /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9C5B821B676A2000B816E /* AlamofireWrapper.swift */; };
 		CB69BA5121B7502500C595E5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69BA5021B7502500C595E5 /* UIViewExtension.swift */; };
 		CB69BA5321B75B9F00C595E5 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB69BA5221B75B9F00C595E5 /* TestView.xib */; };
+		CB73031F21C3A5BA00D8CB18 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB73031E21C3A5BA00D8CB18 /* test.storyboard */; };
+		CB73037D21C9DD8300D8CB18 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73037C21C9DD8300D8CB18 /* Security.framework */; };
+		CBA49AAC21F1698C001FCFF0 /* TestNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA49AAB21F1698C001FCFF0 /* TestNavViewController.m */; };
+		CBA49AAF21F1B259001FCFF0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA49AAE21F1B259001FCFF0 /* RootViewController.m */; };
 		CBA8453121B6421300723A2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA8453021B6421300723A2E /* AppDelegate.m */; };
 		CBA8453421B6421300723A2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA8453321B6421300723A2E /* ViewController.m */; };
 		CBA8453721B6421300723A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA8453521B6421300723A2E /* Main.storyboard */; };
@@ -26,6 +30,7 @@
 		CBA8455421B6421500723A2E /* iOSBasicsObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA8455321B6421500723A2E /* iOSBasicsObjCUITests.m */; };
 		CBA8456321B643D400723A2E /* SampleJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA8456221B643D400723A2E /* SampleJson.swift */; };
 		CBA9C5B921B676A2000B816E /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9C5B821B676A2000B816E /* AlamofireWrapper.swift */; };
+		CBB074A321D3736100DD77D7 /* MZSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB074A221D3736100DD77D7 /* MZSlider.swift */; };
 		F9381DDB18D2C2046B43BC34 /* Pods_iOSBasicsObjCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE612DA40EDBEC114BA5F4B /* Pods_iOSBasicsObjCTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +63,12 @@
 		CB69BA5021B7502500C595E5 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		CB69BA5221B75B9F00C595E5 /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		CB6D99E121BF391E007EABDD /* EnableSwiftForObjCProject.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = EnableSwiftForObjCProject.md; sourceTree = "<group>"; };
+		CB73031E21C3A5BA00D8CB18 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
+		CB73037C21C9DD8300D8CB18 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CBA49AAA21F1698C001FCFF0 /* TestNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNavViewController.h; sourceTree = "<group>"; };
+		CBA49AAB21F1698C001FCFF0 /* TestNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNavViewController.m; sourceTree = "<group>"; };
+		CBA49AAD21F1B259001FCFF0 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CBA49AAE21F1B259001FCFF0 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		CBA8452C21B6421300723A2E /* iOSBasicsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBasicsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA8452F21B6421300723A2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBA8453021B6421300723A2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +88,9 @@
 		CBA8456121B643D400723A2E /* iOSBasicsObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSBasicsObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 		CBA8456221B643D400723A2E /* SampleJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJson.swift; sourceTree = "<group>"; };
 		CBA9C5B821B676A2000B816E /* AlamofireWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireWrapper.swift; sourceTree = "<group>"; };
+		CBB074A221D3736100DD77D7 /* MZSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZSlider.swift; sourceTree = "<group>"; };
+		CBB074B621D485C200DD77D7 /* testJson.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = testJson.geojson; sourceTree = "<group>"; };
+		CBC8FE8F2201601F00B646B3 /* CustomBackButton.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CustomBackButton.md; sourceTree = "<group>"; };
 		F9031DD27D229CB1E6D93F5B /* Pods-iOSBasicsObjCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBasicsObjCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBasicsObjCUITests/Pods-iOSBasicsObjCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB643DAEC383F6457632408F /* Pods_iOSBasicsObjCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSBasicsObjCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB73037D21C9DD8300D8CB18 /* Security.framework in Frameworks */,
 				C1F9D0BC5BD5684E5799B478 /* Pods_iOSBasicsObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +127,7 @@
 		2162912F03E3725E64E5D3C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB73037C21C9DD8300D8CB18 /* Security.framework */,
 				2F275B9BE16892FE2C120187 /* Pods_iOSBasicsObjC.framework */,
 				7DE612DA40EDBEC114BA5F4B /* Pods_iOSBasicsObjCTests.framework */,
 				FB643DAEC383F6457632408F /* Pods_iOSBasicsObjCUITests.framework */,
@@ -135,6 +151,7 @@
 		CBA8452321B6421300723A2E = {
 			isa = PBXGroup;
 			children = (
+				CBC8FE8F2201601F00B646B3 /* CustomBackButton.md */,
 				CB6D99E121BF391E007EABDD /* EnableSwiftForObjCProject.md */,
 				CBA8452E21B6421300723A2E /* iOSBasicsObjC */,
 				CBA8454721B6421500723A2E /* iOSBasicsObjCTests */,
@@ -163,6 +180,7 @@
 				CBA8453221B6421300723A2E /* ViewController.h */,
 				CBA8453321B6421300723A2E /* ViewController.m */,
 				CBA8453521B6421300723A2E /* Main.storyboard */,
+				CBB074B621D485C200DD77D7 /* testJson.geojson */,
 				CBA8453821B6421500723A2E /* Assets.xcassets */,
 				CBA8453A21B6421500723A2E /* LaunchScreen.storyboard */,
 				CBA8453D21B6421500723A2E /* Info.plist */,
@@ -172,6 +190,12 @@
 				CBA9C5B821B676A2000B816E /* AlamofireWrapper.swift */,
 				CB69BA5021B7502500C595E5 /* UIViewExtension.swift */,
 				CB69BA5221B75B9F00C595E5 /* TestView.xib */,
+				CB73031E21C3A5BA00D8CB18 /* test.storyboard */,
+				CBB074A221D3736100DD77D7 /* MZSlider.swift */,
+				CBA49AAA21F1698C001FCFF0 /* TestNavViewController.h */,
+				CBA49AAB21F1698C001FCFF0 /* TestNavViewController.m */,
+				CBA49AAD21F1B259001FCFF0 /* RootViewController.h */,
+				CBA49AAE21F1B259001FCFF0 /* RootViewController.m */,
 			);
 			path = iOSBasicsObjC;
 			sourceTree = "<group>";
@@ -306,6 +330,7 @@
 				CB69BA5321B75B9F00C595E5 /* TestView.xib in Resources */,
 				CBA8453C21B6421500723A2E /* LaunchScreen.storyboard in Resources */,
 				CBA8453921B6421500723A2E /* Assets.xcassets in Resources */,
+				CB73031F21C3A5BA00D8CB18 /* test.storyboard in Resources */,
 				CBA8453721B6421300723A2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,8 +456,11 @@
 				CB69BA5121B7502500C595E5 /* UIViewExtension.swift in Sources */,
 				CBA8453421B6421300723A2E /* ViewController.m in Sources */,
 				CBA9C5B921B676A2000B816E /* AlamofireWrapper.swift in Sources */,
+				CBB074A321D3736100DD77D7 /* MZSlider.swift in Sources */,
 				CBA8453F21B6421500723A2E /* main.m in Sources */,
+				CBA49AAF21F1B259001FCFF0 /* RootViewController.m in Sources */,
 				CBA8453121B6421300723A2E /* AppDelegate.m in Sources */,
+				CBA49AAC21F1698C001FCFF0 /* TestNavViewController.m in Sources */,
 				CBA8456321B643D400723A2E /* SampleJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

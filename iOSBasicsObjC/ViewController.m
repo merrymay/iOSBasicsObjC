@@ -12,6 +12,7 @@
 #import "CocoaLumberjack.h"
 #import "Masonry.h"
 
+#import <CommonCrypto/CommonCryptor.h>
 
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
@@ -25,12 +26,12 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 - (void)loadView {
     [super loadView];
 
-    UIView *sampleView = [[UIView alloc]init];
-    sampleView.translatesAutoresizingMaskIntoConstraints = NO;
-     
- 
-    sampleView.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:sampleView];
+//    UIView *sampleView = [[UIView alloc]init];
+//    sampleView.translatesAutoresizingMaskIntoConstraints = NO;
+//
+//
+//    //sampleView.backgroundColor = [UIColor blueColor];
+//    [self.view addSubview:sampleView];
     
     
 //    if (@available(iOS 11.0, *)) {
@@ -50,17 +51,19 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
     // Do any additional setup after loading the view, typically from a nib.
     
     MyNetworkManager *mgr = [[MyNetworkManager alloc] init];
-    [mgr sendSimpleHttpRequestUsingAlmofireWithSuccess:^(SampleJson * data) {
-        
-        NSLog(@">>> Success Block = %@", data.companies[0]);
-        
-        self.myLabel.text = data.companies[0];
-        
-    } failure:^(NSError * error) {
-        NSLog(@">>> Fail Block = %@", error);
-    }];
- 
-    [mgr testNetworkWrapper];
+//    [mgr sendSimpleHttpRequestUsingAlmofireWithSuccess:^(SampleJson * data) {
+//
+//        NSLog(@">>> Success Block = %@", data.companies[0]);
+//
+//        self.myLabel.text = data.companies[0];
+//
+//    } failure:^(NSError * error) {
+//        NSLog(@">>> Fail Block = %@", error);
+//    }];
+//
+//    [mgr testNetworkWrapper];
+    SampleJson2 *jsonObj = [mgr testLocalJson];
+    NSLog(@">>>>> jsonObj.a = %@", jsonObj.aNumber);
     
     
     
@@ -80,10 +83,11 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 //    }];
 //    [dataTask resume];
     
-    [self testSnapKit];
+    //[self testSnapKit];
     
     // Test Lumberjack logger
     [self testLumberjackLogger];
+    
     
     
 }
@@ -116,4 +120,6 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
     DDLogWarn(@"Warn");
     DDLogError(@"Error");
 }
+
+
 @end

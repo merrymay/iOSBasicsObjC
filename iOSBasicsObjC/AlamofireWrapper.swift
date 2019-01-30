@@ -15,11 +15,7 @@ import CocoaLumberjack
 public enum Result<T> {
     case success(T)
     case error
-}
-
-public enum APIError : Error {
     case noData
-    case unknown
 }
 
 public protocol NetworkRequest {
@@ -44,7 +40,7 @@ public class RealNetworkRequest: NetworkRequest {
             
             guard let content = data else {
                 DDLogWarn("No data")
-                // TODO completion(.noData)
+                completion(.noData)
                 return
             }
             

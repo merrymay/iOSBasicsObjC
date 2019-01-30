@@ -61,4 +61,62 @@ import Alamofire
                 
         }
     }
+    
+    @objc func testLocalJson() -> SampleJson2 {
+        let sample1Data = """
+            {
+                "a": null,
+                "b": "Hello",
+                "c" : "",
+            }
+            """.data(using: .utf8)!
+        
+        let decode = try! JSONDecoder().decode(SampleJson2.self, from: sample1Data)
+        print("*** JSON Decode2  = \(decode)")
+        return decode
+    }
 }
+
+
+
+
+public class SampleJson2: NSObject, Codable {
+    @objc var b:String?
+    @objc var c:String?
+ 
+    var a:Int?
+    @objc var aNumber : NSNumber? {
+        return a as NSNumber?
+    }
+//    var a: String?
+//    var y: String?
+//
+//    enum CodingKeys: String, CodingKey {
+//        case a, y = "b" // using coding key
+//    }
+//
+//    // define custom decoder, allow optional variable
+//    init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        a = try values.decodeIfPresent(String.self, forKey: .a)
+//        y = try values.decodeIfPresent(String.self, forKey: .y)
+//    }
+}
+ 
+//extension SampleJson2 {
+//    @objc var aNumber : NSNumber? {
+//        return a as NSNumber?
+//    }
+//}
+
+//extension Int {
+//
+//    init?(exactly number: NSNumber){
+//        self = Int(number.intValue);
+//    }
+//    init(truncating number: NSNumber){
+//        self = Int(number.intValue);
+//    }
+//
+//
+//}

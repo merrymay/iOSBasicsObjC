@@ -1,0 +1,85 @@
+{
+    code = 0;
+    groupList =     (
+    {
+        contractNumber = 508644840;
+        isCombiningYn = "<null>";
+        maskedPhoneNumber = "010-7533-*960";
+        profile =             {
+            birthday = 19700202;
+            calendar = S;
+            image = 2;
+            imageType = C;
+            nickname = "1\Uc544\Ube60";
+        };
+        status = notAllowed;
+        statusMessage = "\Ub370\Uc774\Ud130/\Ud3ec\Uc778\Ud2b8 \Ud604\Ud669\Uc744 \Ubbf8\Uacf5\Uac1c\Ub85c \Uc124\Uc815\Ud588\Uc2b5\Ub2c8\Ub2e4.";
+    },
+    {
+        contractNumber = 239294768;
+        data =             {
+            canPutData = 0;
+            planType = LTE;
+            takeData = 0;
+            totalData = 0;
+            ulLteYn = "";
+        };
+        isCombiningYn = "<null>";
+        maskedPhoneNumber = "010-6234-*960";
+        point =             {
+            canPutPoint = 0;
+            isMembershipUser = N;
+            totalPoint = 0;
+        };
+        profile =             {
+            birthday = 19970101;
+            calendar = S;
+            image = 4;
+            imageType = C;
+            nickname = "\U3134\Ube1d";
+        };
+        status = success;
+    },
+    {
+        contractNumber = 508672132;
+        data =             {
+            canPutData = 0;
+            planType = bigi;
+            takeData = 0;
+            totalData = 0;
+            ulLteYn = "";
+        };
+        isCombiningYn = "<null>";
+        maskedPhoneNumber = "010-6533-*960";
+        point =             {
+            canPutPoint = 0;
+            isMembershipUser = N;
+            totalPoint = 0;
+        };
+        profile =             {
+            birthday = 19970101;
+            calendar = S;
+            image = 1;
+            imageType = C;
+            nickname = fmbox13;
+        };
+        status = success;
+    },
+    {
+        contractNumber = 503059879;
+        isCombiningYn = "<null>";
+        maskedPhoneNumber = "010-7133-*960";
+        profile =             {
+            birthday = 19720101;
+            calendar = S;
+            image = 2;
+            imageType = C;
+            nickname = "1\Uc5c4\Ub9c8";
+        };
+        status = notAllowed;
+        statusMessage = "\Ub370\Uc774\Ud130/\Ud3ec\Uc778\Ud2b8 \Ud604\Ud669\Uc744 \Ubbf8\Uacf5\Uac1c\Ub85c \Uc124\Uc815\Ud588\Uc2b5\Ub2c8\Ub2e4.";
+    }
+    );
+    message = "\Uc131\Uacf5";
+    simpleCombine = Y;
+    }

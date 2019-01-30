@@ -44,7 +44,16 @@ extension UIView {
             return self.safeAreaLayoutGuide.rightAnchor
         } else {
             return self.rightAnchor
+            
         }
     }
     
 }
+//
+//extension UINavigationBar {
+//
+//    override open func sizeThatFits(_ size: CGSize) -> CGSize {
+//        return CGSize(width: UIScreen.main.bounds.size.width, height: 80.0)
+//    }
+//}
+//
