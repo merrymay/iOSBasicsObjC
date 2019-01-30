@@ -31,6 +31,7 @@
 		CBA8456321B643D400723A2E /* SampleJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA8456221B643D400723A2E /* SampleJson.swift */; };
 		CBA9C5B921B676A2000B816E /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9C5B821B676A2000B816E /* AlamofireWrapper.swift */; };
 		CBB074A321D3736100DD77D7 /* MZSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB074A221D3736100DD77D7 /* MZSlider.swift */; };
+		CBC8FE9E2201740E00B646B3 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC8FE9D2201740E00B646B3 /* BannerViewController.m */; };
 		F9381DDB18D2C2046B43BC34 /* Pods_iOSBasicsObjCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE612DA40EDBEC114BA5F4B /* Pods_iOSBasicsObjCTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,8 @@
 		CBB074A221D3736100DD77D7 /* MZSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZSlider.swift; sourceTree = "<group>"; };
 		CBB074B621D485C200DD77D7 /* testJson.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = testJson.geojson; sourceTree = "<group>"; };
 		CBC8FE8F2201601F00B646B3 /* CustomBackButton.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CustomBackButton.md; sourceTree = "<group>"; };
+		CBC8FE9C2201740E00B646B3 /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		CBC8FE9D2201740E00B646B3 /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		F9031DD27D229CB1E6D93F5B /* Pods-iOSBasicsObjCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBasicsObjCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBasicsObjCUITests/Pods-iOSBasicsObjCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB643DAEC383F6457632408F /* Pods_iOSBasicsObjCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSBasicsObjCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -175,6 +178,7 @@
 		CBA8452E21B6421300723A2E /* iOSBasicsObjC */ = {
 			isa = PBXGroup;
 			children = (
+				CBC8FE9B220173EF00B646B3 /* BannerViewController */,
 				CBA8452F21B6421300723A2E /* AppDelegate.h */,
 				CBA8453021B6421300723A2E /* AppDelegate.m */,
 				CBA8453221B6421300723A2E /* ViewController.h */,
@@ -217,6 +221,15 @@
 				CBA8455521B6421500723A2E /* Info.plist */,
 			);
 			path = iOSBasicsObjCUITests;
+			sourceTree = "<group>";
+		};
+		CBC8FE9B220173EF00B646B3 /* BannerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBC8FE9C2201740E00B646B3 /* BannerViewController.h */,
+				CBC8FE9D2201740E00B646B3 /* BannerViewController.m */,
+			);
+			path = BannerViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +470,7 @@
 				CBA8453421B6421300723A2E /* ViewController.m in Sources */,
 				CBA9C5B921B676A2000B816E /* AlamofireWrapper.swift in Sources */,
 				CBB074A321D3736100DD77D7 /* MZSlider.swift in Sources */,
+				CBC8FE9E2201740E00B646B3 /* BannerViewController.m in Sources */,
 				CBA8453F21B6421500723A2E /* main.m in Sources */,
 				CBA49AAF21F1B259001FCFF0 /* RootViewController.m in Sources */,
 				CBA8453121B6421300723A2E /* AppDelegate.m in Sources */,
